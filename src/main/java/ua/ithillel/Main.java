@@ -1,5 +1,13 @@
-package ua.ithillel;public class Main {
+package ua.ithillel;
+
+import com.google.gson.Gson;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Cat cat = new Cat("Tom",2,"Rad");
+        System.out.println(cat);
+
+        String json =new Gson().toJson(cat);
+        System.out.println(json);
     }
 }
